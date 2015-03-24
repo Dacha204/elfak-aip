@@ -1,2 +1,2 @@
-# elfak-aip
-AIP Laboratorijske vezbe. 2014-2015
+# Elfak - AIP
+Algoritmi i programiranje (AIP) - Laboratorijske vezbe. 2014-2015
