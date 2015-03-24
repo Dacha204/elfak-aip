@@ -1,34 +1,26 @@
 #include <stdio.h>
+#include <math.h>
 
-double Abs(double x) //funkcija za absolutnu vrednost
-{
-	if (x < 0) 
-		return -x;
-	return x;
-}
-
-int main(void){
+main(){
 	
 	double x,e, ex, en, exp_old, exp_new;
 	int n = 1;
+	
 	scanf("%lf %lf",&x,&e);
 	
 	exp_old = exp_new = ex = en = n = 1;
 	
 	do {
+		ex = ex * x;
+		en = en * n;
 		exp_old = exp_new;
-		exp_new += (ex *= x)/(en *= n++);
-	} while (Abs(exp_new - exp_old) > e);
-	
-	/*do {
-		ex *= x;
-		en *= n;
-		exp_old = exp_new;
-		exp_new += ex/en;
+		exp_new = exp_new + ex/en;
 		n++;		
-	} while( Abs(exp_new - exp_old) > e);
-	*/
-	printf("%15.10lf",exp_new);
+	} while( fabsf(exp_new - exp_old) > e);
 	
-	return 0;
+	printf("%15.10lf",exp_new);
 }
+
+/* fabsf <=> abs 
+ * vidi prethodni zadatak
+ */
