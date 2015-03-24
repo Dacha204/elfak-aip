@@ -1,24 +1,28 @@
 #include <stdio.h>
 
-int main(void){
+int main(){
 
 	int n, i, k;
 	int prost;
 
 	scanf("%d",&n);
 	
-	for (i = 2; i <= n; i++){
-		prost = 1;
+	//ispitujemo redom od 2 do n (1 nije prost broj po def)
+	for (i = 2; i <= n; i++){ 		
+		
+		//proglasimo trenutni testirani broj za prost
+		prost = 1;					
 
+		//testiramo dal' je trenutni broj deljiv sa nekim brojem izmedju 2 i tog broja
+		//prekidamo petlju cim pronadjemo prvi broj koji deli testirani broj (optimizacija)
 		for (k = 2; k <= i/2 && prost; k++)
 			if (i%k == 0)
 				prost = 0;
 		
+		//ako je testirani broj prost - stampamo
 		if (prost)
 				printf("%d ",i);
 
 	}
-	
-	
 	return 0;
 }
