@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+main(){
 
 	int n, i, k;
 	int prost;
@@ -24,5 +24,5 @@ int main(){
 				printf("%d ",i);
 
 	}
-	return 0;
+
 }
