@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void){
+main(){
 
 	float A,B;
 	char op;
@@ -15,6 +15,4 @@ int main(void){
 		default: printf("Error");
 	}
 
-	
-	return 0;
 }
