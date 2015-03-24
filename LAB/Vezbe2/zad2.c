@@ -1,25 +1,41 @@
 #include <stdio.h>
 
-
-int main(void){
+void main(){
 	
-	int n, f1 =1, f2 =1, s, Sum = 0;
-	int i, Sn = 2;
-	scanf("%d",&n);
-
+	// p - broj pronadjenih koji ispunjavaju kriterijum
+	// fpp,fp,fn - fib. predpredhodni,predhodni, novi clan fib. niza
+	// s - suma
 	
-	for (i = 3; Sn <= n; i++){
-		s  = f1 + f2;
-		//printf(" %d",s);
-		if (s % 2 == 0){
-			//printf("!");
-			Sum += s;
-			Sn++;
-		}
-		f1 = f2;
-		f2 = s;
-	}
+	int n,p;
+	unsigned long fpp, fp, fn, s;
+	
+	fpp = fp = 1; //pocetni clanovi fib. niza
+	s = 0;
+	p = 0;
+	scanf("%d", &n);
+	
+	//sve dok ne nadjemo dovoljan broj clanova koji ispunjavaju uslov
+	while (p < n){
 		
-		printf("\n Sum= %d",Sum);
-	return 0;
+		//novi clan - zbir prethodna 2
+		fn = fpp + fp;
+		
+		//da li je novi clan paran broj
+		if (fn % 2 == 0){
+			s = s + fn; 	//sumiramo ga			
+			p++; 			//povecavamo brojac pronadjenih clanova
+		}
+		
+		//priprema za pronalaz novog clana (u novom ciklusu)
+		fpp = fp; 
+		fp = fn;	
+	}
+	
+	//stampamo sumu
+	printf("%lu",s);
+	
+
+
+
+
 }
