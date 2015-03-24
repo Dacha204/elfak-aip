@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+main(){
 	
 	// p - broj pronadjenih koji ispunjavaju kriterijum
 	// fpp,fp,fn - fib. predpredhodni,predhodni, novi clan fib. niza
