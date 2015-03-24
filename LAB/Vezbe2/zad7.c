@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(void){
+main(void){
 	
 	float y;
 	int x,n;
@@ -19,5 +19,5 @@ int main(void){
 		printf("%f\n",y);
 	
 	}
-	return 0;
+
 }
