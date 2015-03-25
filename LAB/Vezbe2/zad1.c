@@ -18,7 +18,14 @@ main(){
 		for (k = 2; k <= i/2 && prost; k++)
 			if (i%k == 0)
 				prost = 0;
-		
+		/* umesto for moze i
+		 k = 2;
+ 		 while (k <= i/2 && prost){
+	 	 	if (i%k == 0)
+				prost = 0;
+			k++;
+		}
+		*/
 		//ako je testirani broj prost - stampamo
 		if (prost)
 				printf("%d ",i);
