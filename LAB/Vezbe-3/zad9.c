@@ -16,7 +16,7 @@ int main(){
 
 		//unesi poziciju index (k) i broj (x) za umetanje
 		scanf("%d %d",&k,&x);
-		k--; //indexi u C krecu od 0, korisniku od 1 (pretpostavka, nije u zadatku definisano)
+		
 		if (k == n){ //ako je index na kraju niza samo dodamo taj broj i povecamo velicinu niza za 1
 			a[k] = x;
 			n++;
