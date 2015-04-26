@@ -19,6 +19,7 @@ main(){
 
 }
 
+
 /* powf <=> pow. 
  * powf funkcija uzima za parametar float i vraca rezultat float 
  * pow funckija uzima za parametar double i vraca rezultat double
