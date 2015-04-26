@@ -26,4 +26,5 @@ int main(){
 	//mnozimo sa 1.0 da bi rezultat bio float. suma/n je celobrojno deljenje (int sum, int n)	
 	
 	return 0;
+	
 }
