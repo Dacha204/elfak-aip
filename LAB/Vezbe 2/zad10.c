@@ -14,5 +14,4 @@ main(){
 		case '*': printf("%f",A*B); break;
 		default: printf("Error");
 	}
-
 }
