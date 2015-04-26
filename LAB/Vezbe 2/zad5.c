@@ -49,5 +49,4 @@ void main(){
 		}  
 		temp = temp / 16;		// krati poslednju cifru
 	}
-
 }
