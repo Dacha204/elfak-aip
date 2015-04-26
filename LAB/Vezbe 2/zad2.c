@@ -33,9 +33,6 @@ main(){
 	
 	//stampamo sumu
 	printf("%lu",s);
-	
-
-
 
 
 }
