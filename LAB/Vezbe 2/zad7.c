@@ -19,5 +19,5 @@ main(void){
 		printf("%f\n",y);
 	
 	}
-
 }
+
