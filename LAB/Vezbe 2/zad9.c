@@ -21,6 +21,7 @@ main(){
 	printf("%15.10lf",exp_new);
 }
 
+
 /* fabsf <=> abs 
  * vidi prethodni zadatak
  */
