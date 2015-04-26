@@ -21,4 +21,5 @@
 		printf("f(%d)=%.0lf\tf(%d)=%.0lf\n",k,f1,k*k,f2);
 	}
 
+
 }
