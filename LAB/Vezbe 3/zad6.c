@@ -24,6 +24,5 @@ int main(){
 
 	printf("max = %d",max);
 	
-	
 	return 0;
 }
