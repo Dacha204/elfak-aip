@@ -43,7 +43,7 @@ int main(){
  * 
  * Kada bi omogucili da korisnik sam unese velicinu i elemente matrice
  * gornju sekciju bi zamenili sa
- * 
+ 
  * int a[10][10];
  * //Unos matrice
 	printf("N= ");
