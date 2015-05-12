@@ -2,18 +2,15 @@
 
 void minimax(int niz[], int duzina, int *min, int *max){
 	
-	int imin, imax,i;
+	int i;
 	
-	imin = imax = 0;
+	*min = *max = 0;
 	
 	for (i=0; i<duzina; i++)
-		if(niz[i] > niz[imax])
-			imax = i;
-		else if (niz[i] < niz[imin])
-			imin = i;
-	
-	*min = imin;
-	*max = imax;
+		if(niz[i] > niz[*max])
+			*max = i;
+		else if (niz[i] < niz[*min])
+			*min = i;
 }
 
 
